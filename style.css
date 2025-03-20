@@ -48,7 +48,6 @@ article#first-art > .images {
     grid-template-rows: auto auto auto;
     object-fit: cover;
 }
-
 article#first-art > .images > #cube-mini {
     width: 40%;
     height: auto;
