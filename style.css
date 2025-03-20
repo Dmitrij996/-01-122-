@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 20px;
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
