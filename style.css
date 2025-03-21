@@ -3,8 +3,11 @@
     margin: 0;
 }
 body{
-    margin: 0 100px;
+    margin: 0 10vw;
     background-color: #DBDBDA;
+}
+a, h1, pre, h2{
+    font-family: "Times New Roman", s, serif;
 }
 header{
     display: flex;
@@ -30,16 +33,14 @@ a{
 
 article {
     margin: 10vh 1vh 30vh 1vh;
-    height: 500px;
 
 }
 
 article#first-art {
     min-width: 500px;
     max-width: 100%;
-    gap: 30px;
     width: auto;
-    height: 400px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -47,7 +48,7 @@ article#first-art {
 }
 
 article#first-art > .images {
-    height: 400px;
+    height: auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
@@ -107,20 +108,23 @@ article#first-art > .images > #cube-mini {
 
 }
 .palfinger{
+    height: auto;
 
-    height: 400px;
+align-content: center;
+
+
 }
 .palfinger > h1{
     font-size: 5vw;
     padding: 20px;
     text-align: center;
-    vertical-align: center;
+vertical-align: center;
 }
 
 .info{
     display: flex;
-    max-width: 400px;
-    height: 400px;
+
+    height: auto;
 }
 .info > a{
     font-size: 1vw;
@@ -129,23 +133,24 @@ article#first-art > .images > #cube-mini {
 
 #second-art{
     display: grid;
-    grid-template-columns: 47% 47% 5%;
-    grid-template-rows:30% 30% 40%;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto auto;
 }
 #second-art > pre{
     display: flex;
-    align-self: center;
-     font-size: 70px;
+    align-self: end;
+padding-bottom: 20px;
+     font-size: 4.5vw;
      grid-column: 1/2;
-     grid-row: 1/3;
+     grid-row: 1/2;
  }
 #second-art > a{
     display: flex;
 
     align-self: start;
-    font-size: 20px;
+    font-size: 1.5vw;
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 2/3;
 }
 #second-art > #img-sec-art{
     display: flex;
@@ -154,16 +159,51 @@ article#first-art > .images > #cube-mini {
 
     font-size: 40px;
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 1/3;
     border-radius: 40px;
 }
 #second-art > #img-location{
     display: flex;
     justify-self: left;
-    align-self: end;
-width: 150px;
-    grid-column: 3/4;
-    grid-row: 1/2;
+    align-self: center;
+width: 40vw;
+    grid-column: 2/3;
+    grid-row: 1/3;
 z-index: 1;
+}
+
+#third-art{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+#third-art > h1{
+    font-size: 5vw;
+    font-weight: normal;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#third-art > #iv-yellow{
+    display: flex;
+    justify-self: left;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 46vw;
+}
+#third-art > #div-red{
+    display: flex;
+    justify-self: right;
+    position: relative;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 46vw;
+}
+#third-art > #div-yellow > pre{
+    position: absolute;
+    margin: auto;
+}
+#third-art > #div-red > pre{
+    position: absolute;
 }
 
