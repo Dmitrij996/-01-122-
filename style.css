@@ -31,12 +31,8 @@ a{
     text-decoration: none;
 }
 
-article {
-    margin: 10vh 1vh 30vh 1vh;
-
-}
-
 article#first-art {
+    margin: 10vh 1vh 30vh 1vh;
     min-width: 500px;
     max-width: 100%;
     width: auto;
@@ -132,6 +128,7 @@ vertical-align: center;
 }
 
 #second-art{
+    margin: 10vh 1vh 30vh 1vh;
     display: grid;
     grid-template-columns:auto auto;
     grid-template-rows:auto auto;
@@ -173,6 +170,7 @@ z-index: 1;
 }
 
 #third-art{
+    margin: 10vh 1vh 10vh 1vh;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -208,4 +206,24 @@ position: relative;
     left: 60vw;
     z-index: 3;
     width: 15vw;
+}
+
+
+
+#fourth-art{
+    margin: 10vh 1vh 30vh 1vh;
+
+}
+#fourth-art > h1{
+    font-size: 4vw;
+    font-weight: normal;
+
+    z-index: 5;
+    margin: 1vw 0;
+}
+#fourth-art > #fourth-map{
+    display: flex;
+    justify-self: center;
+
+    width: 46vw;
 }

@@ -12,6 +12,7 @@ a, h1, pre, h2{
 h1{
     font-size: 4vw;
     margin: 0 0 5vw 6vw;
+    color: #BE0000;
 }
 h2{
     font-size: 2vw;
@@ -22,5 +23,5 @@ article{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 10vw 0;
+    margin: 6vw 0;
 }
