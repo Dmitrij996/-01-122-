@@ -183,27 +183,26 @@ z-index: 1;
     grid-column: 1/4;
     grid-row: 1/2;
 }
-#third-art > #iv-yellow{
+#third-art > #yellow-img{
     display: flex;
     justify-self: left;
-    position: relative;
+position: relative;
     grid-column: 1/3;
     grid-row: 2/3;
     width: 46vw;
 }
-#third-art > #div-red{
+#third-art > #red-img{
     display: flex;
     justify-self: right;
-    position: relative;
+position: relative;
     grid-column: 2/4;
     grid-row: 2/3;
     width: 46vw;
 }
-#third-art > #div-yellow > pre{
+#third-art > #red-img > a{
     position: absolute;
-    margin: auto;
+    top: 50%;
 }
-#third-art > #div-red > pre{
-    position: absolute;
-}
+#third-art > #yellow-img > a{
 
+}
