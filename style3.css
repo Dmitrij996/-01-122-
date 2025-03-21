@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 5vw 10vh 3vw 10vh;
+    background-color: #DBDBDA;
+}
+a, h1, pre, h2{
+    font-family: "Times New Roman", s, serif;
+}
+article{
+    margin: 10vw 0;
+}
+h1{
+    font-size: 4vw;
+    margin: 0 0 5vw 6vw;
+}
+h2{
+    font-size: 2vw;
+    margin: 0 0 5vw 0;
+    text-align: center;
+}
+#first-art{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+#first-art > #first-map{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#first-art > #first-explanation{
+    padding: 3vw 0;
+    font-size: 1.5vw;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#second-art > h2{
+    font-size: 3vw;
+}
+ol {
+    list-style-type: none;
+    counter-reset: num;
+    margin: 0 0 0 45px;
+    padding: 15px 0 5px 0;
+    font-size: 2vw;
+}
+ol li {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 0 5vw 3vw;
+    line-height: 1.4;
+    font-size: 2.5vw;
+}
+ol li:before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -38px;
+    width: 3vw;
+    height: 3vw;
+    background: #FFD430;
+    text-align: center;
+    line-height: 2.7vw;
+    font-size: 2vw;
+    border-radius: 50%;
+
+}
