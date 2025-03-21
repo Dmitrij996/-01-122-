@@ -127,7 +127,7 @@ vertical-align: center;
     height: auto;
 }
 .info > a{
-    font-size: 1vw;
+    font-size: 1.5vw;
    align-self:center;
 }
 
@@ -140,7 +140,7 @@ vertical-align: center;
     display: flex;
     align-self: end;
 padding-bottom: 20px;
-     font-size: 4.5vw;
+     font-size: 4vw;
      grid-column: 1/2;
      grid-row: 1/2;
  }
@@ -178,10 +178,11 @@ z-index: 1;
     grid-template-rows: auto auto;
 }
 #third-art > h1{
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: normal;
     grid-column: 1/4;
     grid-row: 1/2;
+    z-index: 5;
 }
 #third-art > #yellow-img{
     display: flex;
@@ -198,11 +199,13 @@ position: relative;
     grid-column: 2/4;
     grid-row: 2/3;
     width: 46vw;
+    z-index: 5;
 }
-#third-art > #red-img > a{
+#third-art > #img-phone{
+    grid-column: 3/4;
+    grid-row: 1/2;
     position: absolute;
-    top: 50%;
-}
-#third-art > #yellow-img > a{
-
+    left: 60vw;
+    z-index: 3;
+    width: 15vw;
 }
