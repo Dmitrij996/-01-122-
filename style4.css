@@ -3,9 +3,8 @@
     margin: 0;
 }
 body{
-    margin: 5vw 10vw 0 10vw;
+    margin: 5vw 10vw 3vw 10vw;
     background-color: #DBDBDA;
-
 }
 body { min-height: 100%; margin: 0; }
 a, h1, pre, h2{
@@ -15,18 +14,17 @@ article{
     margin: 6vw auto;
 }
 h1{
-    color: #BE0000;
     font-size: 4vw;
-    margin: 0 0 5vw 6vw;
+    margin:5vw 0 6vw 15vw;
+    color: #BE0000;
 }
 section{
+    margin: 5vw 10vw 3vw 10vw;
     display: block;
     justify-content: center;
-    margin: auto;
 }
 article#first-art {
-    min-width: 500px;
-    max-width: 70vw;
+
     width: auto;
     height: auto;
     display: grid;
@@ -64,8 +62,7 @@ article#first-art {
     font-size: 1.5vw;
 }
 article#second-art {
-    min-width: 500px;
-    max-width: 70vw;
+
     width: auto;
     height: auto;
     display: grid;
