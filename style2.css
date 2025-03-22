@@ -1,27 +1,33 @@
 *{
     box-sizing: border-box;
-    margin: 0;
 }
 body{
     margin: 5vw 10vw 3vw 10vw;
     background-color: #DBDBDA;
 }
+body { min-height: 100%; margin: 0; }
 a, h1, pre, h2{
     font-family: "Times New Roman", s, serif;
 }
 h1{
     font-size: 4vw;
-    margin: 0 0 5vw 6vw;
+    margin: 0 0 6vw 6vw;
     color: #BE0000;
 }
 h2{
     font-size: 2vw;
-    margin: 0 0 5vw 0;
-    text-align: center;
+    margin: 0 0 0 0;
+    text-align: left;
+}
+section{
+    margin:  0 8vw 0 8vw;
 }
 article{
-    display: flex;
-    justify-content: center;
-    align-content: center;
     margin: 6vw 0;
+}
+article > div{
+        width: 100%;
+
+    display: flex;
+    justify-self: center;
 }
