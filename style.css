@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-body { min-height: 100%; margin: 0; }
+html { height: 100%; } body { min-height: 100%; }
 body{
     margin: 0 10vw;
     background-color: #DBDBDA;
@@ -226,5 +226,5 @@ position: relative;
     display: flex;
     justify-self: center;
 
-    width: 46vw;
+    width: 100%;
 }
