@@ -24,7 +24,6 @@ section{
     justify-content: center;
 }
 article#first-art {
-
     width: auto;
     height: auto;
     display: grid;
@@ -137,7 +136,93 @@ ol li:before {
     grid-row: 2/3;
     font-size: 1.5vw;
 }
+@media (max-width: 1700px) {
+    section{
+        margin: 5vw 5vw 3vw 5vw;
+    }
+    #first-art > #info-1{
+        font-size: 1.9vw;
+    }
+    ol {
+        list-style-type: none;
+        counter-reset: num;
+        margin: 0 0 0 45px;
+        padding: 15px 0 5px 0;
+        font-size: 2vw;
+    }
+    ol li {
+        position: relative;
+        margin: 0 0 0 0;
+        padding: 0 0 5vw 3vw;
+        line-height: 1.4;
+        font-size: 3vw;
+    }
+    ol li:before {
+        content: counter(num);
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -38px;
+        width: 5vw;
+        height: 5vw;
+        background: #FFD430;
+        text-align: center;
+        line-height: 5vw;
+        font-size: 3vw;
+        border-radius: 50%;
 
+    }
+}
+@media (max-width: 1000px) {
+    #first-art > #info-1{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 600px) {
+    section{
+        margin: 5vw 1vw 3vw 1vw;
+    }
+    #first-art > #info-1{
+        font-size: 3vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    #second-art > h2{
+        font-size: 5vw;
+    }
+    ol {
+        list-style-type: none;
+        counter-reset: num;
+        margin: 0 0 0 45px;
+        padding: 15px 0 5px 0;
+        font-size: 2vw;
+    }
+    ol li {
+        position: relative;
+        margin: 0 0 0 10vw;
+        padding: 0 0 5vw 3vw;
+        line-height: 1.4;
+        font-size: 3.7vw;
+    }
+    ol li:before {
+        content: counter(num);
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -38px;
+        width: 8vw;
+        height: 8vw;
+        background: #FFD430;
+        text-align: center;
+        line-height: 7vw;
+        font-size: 4vw;
+        border-radius: 50%;
+
+    }
+}
 
 
 

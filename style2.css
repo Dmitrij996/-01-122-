@@ -15,6 +15,7 @@ h1{
     color: #BE0000;
 }
 h2{
+    font-weight: normal;
     font-size: 2vw;
     margin: 0 0 0 0;
     text-align: left;
@@ -29,4 +30,14 @@ article > div{
         width: 100%;
     display: flex;
     justify-self: center;
+}
+@media (max-width: 1800px) {
+    h1{
+        font-size: 4vw;
+        margin:5vw 0 6vw 15vw;
+    }
+    h2{
+        font-size: 3.5vw;
+        margin: 0 0 0 0;
+    }
 }
