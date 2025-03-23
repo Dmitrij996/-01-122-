@@ -17,19 +17,34 @@ div, li{
     font-style: oblique;
 }
 article{
-    margin: 6vw auto;
+    opacity: 0;
+}
+article.animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+article{
+
 }
 h1{
     font-size: 4vw;
-    margin:5vw 0 6vw 15vw;
+    margin:5vw 0 0 15vw;
     color: #BE0000;
 }
 section{
-    margin: 5vw 10vw 3vw 10vw;
+
     display: block;
     justify-content: center;
 }
+#first-art:hover{
+    background-color: rgba(255, 212, 48, 0.53);
+}
+#second-art:hover{
+    background-color: rgba(255, 212, 48, 0.53);
+}
 article#first-art {
+    margin:0;
+    padding:5vw 8vw 5vw 8vw;
     width: auto;
     height: auto;
     display: grid;
@@ -67,7 +82,8 @@ article#first-art {
     font-size: 1.3vw;
 }
 article#second-art {
-
+    margin:0;
+    padding:5vw 8vw 5vw 8vw;
     width: auto;
     height: auto;
     display: grid;
@@ -117,6 +133,17 @@ ol li {
     line-height: 1.4;
     font-size: 2vw;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 ol li:before {
     content: counter(num);
     counter-increment: num;
@@ -132,7 +159,7 @@ ol li:before {
     line-height: 2.7vw;
     font-size: 2vw;
     border-radius: 50%;
-
+    animation: pulse 1.5s infinite;
 }
 #second-art > #info-2{
     margin: auto;
@@ -192,7 +219,7 @@ ol li:before {
 
 @media (max-width: 1000px) {
     section{
-        margin: 5vw 1vw 3vw 1vw;
+        margin: 5vw 0 3vw 0;
     }
     #first-art >  #info-1{
         font-size: 3vw;
@@ -214,7 +241,7 @@ ol li:before {
         position: relative;
         padding: 2vw 0 0.5vw 10vw;
         line-height: 1.4;
-        font-size: 5vw;
+        font-size: 4vw;
         font-family: "Jura", sans-serif;
         font-optical-sizing: auto;
         font-weight: lighter;
@@ -225,7 +252,7 @@ ol li:before {
         counter-increment: num;
         display: inline-block;
         position: absolute;
-        margin: 3vw 0 2vw 1vw;
+        margin: 1.5vw 0 2vw 1vw;
         top: 0;
         left: 2vw;
         width: 7vw;

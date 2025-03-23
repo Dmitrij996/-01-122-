@@ -11,7 +11,7 @@ a, h1, pre, h2{
 }
 h1{
     font-size: 4vw;
-    margin:5vw 0 6vw 15vw;
+    margin:5vw 0 0 15vw;
     color: #BE0000;
 }
 h2{
@@ -24,10 +24,21 @@ h2{
     text-align: left;
 }
 section{
-    margin:  0 8vw 0 8vw;
+
 }
 article{
-    margin: 6vw 0;
+    margin:0;
+    padding:5vw 8vw 5vw 8vw;
+}
+article{
+    opacity: 0;
+}
+article:hover{
+    background-color: rgba(255, 212, 48, 0.53);
+}
+article.animation{
+    opacity: 1;
+    transition: opacity 1s;
 }
 article > div{
         width: 100%;
