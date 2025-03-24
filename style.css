@@ -28,7 +28,17 @@ header{
     display: flex;
     justify-content: center;
 }
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DBDBDA;
+    z-index: 1000;
 
+}
 ul{
     display: flex;
     justify-content: center;
@@ -42,7 +52,7 @@ li:hover{
 }
 li{
     list-style-type: none;
-    padding: 3vw;
+    padding: 3vw 2vw;
 }
 a{
     font-size: 0.6vw;
