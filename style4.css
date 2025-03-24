@@ -6,6 +6,9 @@ body{
 
     background-color: #DBDBDA;
 }
+img{
+    border-radius: 15%;
+}
 body { min-height: 100%; margin: 0; }
 a, h1, pre, h2{
     font-family: "Tektur", s, serif;
@@ -117,7 +120,7 @@ article#first-art {
     grid-column: 2/3;
     grid-row: 2/4;
 }
-#first-art > #info-1{
+#first-art > .info-1{
     margin: auto;
     padding: 3vw;
     object-fit: cover;
@@ -214,7 +217,7 @@ ol li:before {
     font-size: 1.5vw;
 }
 @media (max-width: 1800px){
-    #first-art > #info-1{
+    #first-art > .info-1{
         font-size: 2vw;
     }
     #second-art > h2{
@@ -265,7 +268,7 @@ ol li:before {
     article{
         padding:5vw 1vw 5vw 1vw;
     }
-    #first-art >  #info-1{
+    #first-art >  .info-1{
         font-size: 3vw;
     }
     #second-art >h2{
