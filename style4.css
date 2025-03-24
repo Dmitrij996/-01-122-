@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    margin: 5vw 10vw 3vw 10vw;
+
     background-color: #DBDBDA;
 }
 body { min-height: 100%; margin: 0; }
@@ -24,13 +24,57 @@ article.animation{
     transition: opacity 1s;
 }
 article{
+    margin:0;
+    padding:5vw 8vw 5vw 8vw;
+}
+
+li > a{
+    font-family: "Tektur", s, serif;
+    font-size: 1.5vw;
+}
+a{
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: oblique;
 
 }
-h1{
-    font-size: 4vw;
-    margin:5vw 0 0 15vw;
-    color: #BE0000;
+header{
+    display: flex;
+    justify-content: center;
 }
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DBDBDA;
+    z-index: 1000;
+
+}
+header > ul{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+    min-width: auto;
+    width: 100%;
+    margin: 0;
+}
+header > ul > li:hover{
+    background-color: rgba(255, 212, 48, 0.53);
+}
+header > ul > li{
+    list-style-type: none;
+    padding: 3vw 2vw;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
 section{
 
     display: block;
@@ -218,17 +262,18 @@ ol li:before {
 }
 
 @media (max-width: 1000px) {
-    section{
-        margin: 5vw 0 3vw 0;
+    article{
+        padding:5vw 1vw 5vw 1vw;
     }
     #first-art >  #info-1{
         font-size: 3vw;
     }
     #second-art >h2{
-        font-size: 7vw;
-    }
-    h1{
         font-size: 5vw;
+    }
+    li > a {
+        font-family: "Tektur", s, serif;
+        font-size: 3vw;
     }
     ol {
         list-style-type: none;

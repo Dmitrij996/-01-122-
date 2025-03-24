@@ -60,10 +60,14 @@ a{
     text-decoration: none;
 }
 section{
-    padding: 0 10vw;
-    height: auto;
+
+}
+article:hover{
+    background-color: rgba(255, 212, 48, 0.53);
 }
 article{
+    margin:0;
+    padding:8vw 8vw 8vw 8vw;
     opacity: 0;
 }
 article.animation{
@@ -71,8 +75,8 @@ article.animation{
     transition: opacity 1s;
 }
 article#first-art {
-    margin: 2vw 1vw 10vw 1vw;
-    min-width: 500px;
+
+    min-width: 300px;
     max-width: 100%;
     width: auto;
     height: auto;
@@ -163,7 +167,7 @@ vertical-align: center;
 }
 
 #second-art{
-    margin: 10vw 1vw 15vw 1vw;
+
     display: grid;
     grid-template-columns:auto auto;
     grid-template-rows:auto auto;
@@ -204,7 +208,7 @@ z-index: 1;
 }
 
 #third-art{
-    margin: 15vw 1vw 5vw 1vw;
+
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -245,7 +249,7 @@ position: relative;
 
 
 #fourth-art{
-    margin: 10vw 1vw 10vw 1vw;
+
 
 }
 #fourth-art > h1{
@@ -261,31 +265,15 @@ position: relative;
     width: 100%;
 }
 
-.slideshow-container {
-    max-width: 800px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
 
-.slides {
-    width: 100%;
-    display: none;
-    transition: transform 1s ease-in-out;
-}
-
-.slides img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 @media (max-width: 1800px){
     a{
         font-size: 2vw;
     }
-    section{
-        padding: 0 5vw;
+    article{
+        margin:0;
+        padding:6vw 5vw;
     }
     #second-art > a{
         font-size: 2.5vw;
@@ -304,8 +292,9 @@ position: relative;
         font-size: 3vw;
     }
 
-    section {
-        padding: 0 1vw;
+    article {
+        margin:0;
+        padding:6vw 1vw;
     }
 
     #second-art > a {
@@ -362,7 +351,6 @@ position: relative;
         grid-column: 2/3;
         grid-row: 2/3;
         justify-self: left;
-        float: right;
         margin: 0 10px 10px 0;
 
     }
@@ -391,5 +379,13 @@ position: relative;
     }
     #third-art > h1{
         font-size: 5vw;
+    }
+}
+@media (max-width: 600px){
+    #first-art {
+
+    }
+    article#first-art > .info > a{
+        font-size: 2.5vw;
     }
 }
