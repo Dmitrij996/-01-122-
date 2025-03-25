@@ -78,7 +78,7 @@ article.animation{
     transition: opacity 1s;
 }
 article#first-art {
-
+position: relative;
     min-width: 300px;
     max-width: 100%;
     width: auto;
@@ -93,14 +93,15 @@ article#first-art > .images {
     height: auto;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 1fr auto;
     object-fit: cover;
+    gap: 1vw;
 }
 article#first-art > .images > #cube-mini {
     display: flex;
     justify-self: center;
     align-self: center ;
-    width: 7vw;
+    width: 15vw;
     height: auto;
     object-fit: cover;
     grid-column: 1/2;
@@ -109,22 +110,23 @@ article#first-art > .images > #cube-mini {
 #bigger-palf{
     display: flex;
     justify-self: left;
-    align-self: end;
+    align-self: center;
     width: 25vw;
-    height: auto;
+    height: 25vw;
     object-fit: cover;
     grid-column: 2/3;
     grid-row: 1/3;
+    border-radius: 50%;
 }
 #circle-mini-palf{
     display: flex;
-    justify-self: center;
-    align-self: center ;
-    width: 10vw;
+    justify-self: left;
+    align-self: start ;
+    width: 15vw;
     height: auto;
     object-fit: cover;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-row: 3/4;
 
 }
 #bigger-palf-2{
@@ -132,21 +134,21 @@ article#first-art > .images > #cube-mini {
     justify-self: center;
     align-self: center ;
     width: 15vw;
-    height: auto;
+    height: 15vw;
     object-fit: cover;
     grid-column: 1/2;
-    grid-row: 3/4;
-
+    grid-row: 2/4;
+border-radius: 50%;
 }
 #cube-mini-2{
     display: flex;
-    justify-self: center;
-    align-self: center ;
+    justify-self: right;
+    align-self: end;
     width: 7vw;
     height: auto;
     object-fit: cover;
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 1/2;
 
 }
 .palfinger{
