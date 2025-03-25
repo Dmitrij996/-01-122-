@@ -212,8 +212,9 @@ width: 40vw;
 z-index: 1;
 }
 
-#third-art{
 
+#third-art{
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -225,32 +226,97 @@ z-index: 1;
     grid-row: 1/2;
     z-index: 5;
 }
-#third-art > #yellow-img{
-    display: flex;
-    justify-self: left;
-position: relative;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    width: 46vw;
-}
-#third-art > #red-img{
-    display: flex;
-    justify-self: right;
-position: relative;
-    grid-column: 2/4;
-    grid-row: 2/3;
-    width: 46vw;
-    z-index: 5;
-}
+
 #third-art > #img-phone{
     grid-column: 3/4;
     grid-row: 1/2;
     position: absolute;
-    left: 60vw;
-    z-index: 3;
+    left: -5vw;
+    z-index: -1;
     width: 15vw;
 }
+.contacts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 100%;
+}
 
+.yellow-contact, .red-contact {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.yellow-contact{
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.red-contact{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.yellow-contact img, .red-contact img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.yellow-contact img{
+    display: flex;
+    justify-self: left;
+    width: 50vw;
+}
+.red-contact img{
+    display: flex;
+    justify-self: right;
+    width: 50vw;
+}
+.contact-numbers {
+    position: absolute;
+    top: 15vw;
+    left: 18vw;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+.contact-emails {
+    position: absolute;
+    top: 15vw;
+    left: 37vw;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+.contact-numbers p a{
+    font-family: "Jura", sans-serif;
+    font-size: 2vw;
+}
+.contact-emails p a{
+    color: white;
+    font-family: "Jura", sans-serif;
+    font-size: 2vw;
+}
+
+@media (max-width: 900px) {
+    .yellow-contact, .red-contact {
+    }
+    .contact-numbers p, .contact-emails p {
+        font-size: clamp(12px, 2vw, 18px);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-numbers p, .contact-emails p {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+}
 
 
 #fourth-art{
@@ -334,8 +400,8 @@ position: relative;
         grid-column: 3/4;
         grid-row: 1/2;
         position: absolute;
-        left: 50vw;
-        z-index: 3;
+
+        z-index:-1;
         width: 15vw;
     }
 
